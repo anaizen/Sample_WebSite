@@ -1,0 +1,31 @@
+@use "../globals" as *;
+@use "../parts/common" as *;
+
+.houses {
+  @extend .content-width;
+  @extend .mb-lg;
+
+  &_inner {
+    @extend .flex;
+  }
+
+  &_title {
+    @extend .mb-sm;
+    @extend .font-lr;
+  }
+
+  &_item {
+    @include mq(md) {
+      flex-basis: 50%;
+    }
+
+    @include mq(lg) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &_btn {
+    text-align: center;
+    flex-basis: 100%;
+  }
+}

@@ -1,0 +1,5 @@
+.tween-animate-title {
+  & .char {
+    display: inline-block; // インライン要素だとアニメーションが効かない
+  }
+}
